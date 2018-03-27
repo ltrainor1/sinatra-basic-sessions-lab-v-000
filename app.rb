@@ -9,7 +9,7 @@ end
 
 get '/' do
   @session = session
-  erb :item
+  erb :index
 end
 
 get '/checkout' do
