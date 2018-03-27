@@ -5,12 +5,11 @@ class App < Sinatra::Base
   configure do
   enable :sessions
   set :session_secret, "secret"
-  binding.pry
 end
 
 get '/' do
   @session = session
-  erb :item 
+  erb :item
 end
 
 get '/item' do
