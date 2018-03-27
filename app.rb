@@ -9,6 +9,7 @@ end
 
 get '/' do
   @session = session
+  binding.pry
   erb :item
 end
 
