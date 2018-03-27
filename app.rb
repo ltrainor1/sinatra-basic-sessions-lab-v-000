@@ -13,7 +13,7 @@ get '/' do
 end
 
 get '/checkout' do
-  @session[:item] = params[:name]
+  session[:item] = params[:name]
   erb :checkout
 end
 
