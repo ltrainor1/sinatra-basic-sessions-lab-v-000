@@ -9,12 +9,11 @@ end
 
 get '/' do
   @session = session
-  @session[:name] = "test"
-  binding.pry
   erb :item
 end
 
-get '/item' do
+get '/checkout' do
+  @session[:name] = params[:name]
   erb :checkout
 end
 
