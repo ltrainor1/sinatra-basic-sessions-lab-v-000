@@ -9,9 +9,12 @@ class App < Sinatra::Base
 end
 
 get '/' do
+  @session = session
+  erb :item 
 end
 
 get '/item' do
+  erb :checkout
 end
 
 end
